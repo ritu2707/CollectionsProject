@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.hospitality.utility.BrowserFactory;
 import com.hospitality.utility.CommonUtilities;
@@ -64,15 +65,21 @@ public class TestBase {
     	Reporter.log("Test is about to end",true);
     	if(result.getStatus()==ITestResult.FAILURE)
     	{
-    		logger.fail("test case is failed ",MediaEntityBuilder.createScreenCaptureFromPath(CommonUtilities.Screenshot(driver)).build());
+    		//logger.fail("test case is failed ",MediaEntityBuilder.createScreenCaptureFromPath(CommonUtilities.Screenshot(driver)).build());
     		//logger.addScreenCaptureFromPath(CommonUtilities.Screenshot(driver));
+    		//logger.log(LogStatus., logger.addScreenCaptureFromPath(CommonUtilities.Screenshot(driver)));
+    		logger.log(Status.FAIL, "test case is failed ",MediaEntityBuilder.createScreenCaptureFromPath(CommonUtilities.Screenshot(driver)).build());
+    		
     		}
     	else if(result.getStatus()==ITestResult.SUCCESS)
     	{
-    		logger.pass("test case is passed", MediaEntityBuilder.createScreenCaptureFromPath(CommonUtilities.Screenshot(driver)).build());
+    		String screenshotPath=CommonUtilities.Screenshot(driver);
+    		//logger.pass("test case is passed", MediaEntityBuilder.createScreenCaptureFromPath(CommonUtilities.Screenshot(driver)).build());
     		//logger.addScreenCaptureFromPath(CommonUtilities.Screenshot(driver));
+    		logger.log(Status.PASS, "test case is passed ",MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
     	}
     	report.flush();
+    	
     	Reporter.log("report is generated ",true);
     }
     

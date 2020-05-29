@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Setting is going to be done]]>
@@ -14,10 +14,13 @@
       <![CDATA[Browser launched]]>
     </line>
     <line>
-      <![CDATA[one way flight search test case is started]]>
+      <![CDATA[login is successful]]>
     </line>
     <line>
-      <![CDATA[one way flight search test case is completed]]>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[report is generated ]]>
     </line>
     <line>
       <![CDATA[Test is about to end]]>
@@ -26,12 +29,12 @@
       <![CDATA[report is generated ]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-05-25T22:03:22 IST" name="Default suite" finished-at="2020-05-25T22:04:04 IST" duration-ms="41498">
+  <suite started-at="2020-05-26T10:31:06 IST" name="Default suite" finished-at="2020-05-26T10:31:51 IST" duration-ms="44764">
     <groups>
     </groups>
-    <test started-at="2020-05-25T22:03:22 IST" name="Default test" finished-at="2020-05-25T22:04:04 IST" duration-ms="41498">
-      <class name="com.hospitality.testcases.SearchFlightTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.hospitality.testcases.SearchFlightTest@318ba8c8]" started-at="2020-05-25T22:03:22 IST" name="setUpSuite" finished-at="2020-05-25T22:03:22 IST" duration-ms="254" status="PASS">
+    <test started-at="2020-05-26T10:31:06 IST" name="Default test" finished-at="2020-05-26T10:31:51 IST" duration-ms="44764">
+      <class name="com.hospitality.testcases.LoginTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:06 IST" name="setUpSuite" finished-at="2020-05-26T10:31:06 IST" duration-ms="235" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting is going to be done]]>
@@ -41,7 +44,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hospitality.testcases.SearchFlightTest@318ba8c8]" started-at="2020-05-25T22:03:22 IST" name="setUp" finished-at="2020-05-25T22:03:38 IST" duration-ms="16129" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:06 IST" name="setUp" finished-at="2020-05-26T10:31:32 IST" duration-ms="26536" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser can be started]]>
@@ -51,21 +54,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="flightSearching()[pri:1, instance:com.hospitality.testcases.SearchFlightTest@318ba8c8]" started-at="2020-05-25T22:03:38 IST" name="flightSearching" description="test to search one way flight list " finished-at="2020-05-25T22:03:52 IST" duration-ms="13589" status="PASS">
+        <test-method signature="loginToClearTrip()[pri:1, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:32 IST" name="loginToClearTrip" finished-at="2020-05-26T10:31:36 IST" duration-ms="3472" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[one way flight search test case is started]]>
-            </line>
-            <line>
-              <![CDATA[one way flight search test case is completed]]>
+              <![CDATA[login is successful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- flightSearching -->
-        <test-method is-config="true" signature="failResults(org.testng.ITestResult)[pri:0, instance:com.hospitality.testcases.SearchFlightTest@318ba8c8]" started-at="2020-05-25T22:03:52 IST" name="failResults" finished-at="2020-05-25T22:03:53 IST" duration-ms="1419" status="PASS">
+        </test-method> <!-- loginToClearTrip -->
+        <test-method is-config="true" signature="failResults(org.testng.ITestResult)[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:36 IST" name="failResults" finished-at="2020-05-26T10:31:40 IST" duration-ms="4047" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=flightSearching status=SUCCESS method=SearchFlightTest.flightSearching()[pri:1, instance:com.hospitality.testcases.SearchFlightTest@318ba8c8] output=one way flight search test case is started]]]>
+                <![CDATA[[TestResult name=loginToClearTrip status=SUCCESS method=LoginTest.loginToClearTrip()[pri:1, instance:com.hospitality.testcases.LoginTest@6193932a] output=login is successful]]]>
               </value>
             </param>
           </params>
@@ -78,11 +78,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- failResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hospitality.testcases.SearchFlightTest@318ba8c8]" started-at="2020-05-25T22:03:53 IST" name="tearDown" finished-at="2020-05-25T22:04:04 IST" duration-ms="10291" status="PASS">
+        <test-method signature="loginApp1()[pri:2, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:40 IST" name="loginApp1" finished-at="2020-05-26T10:31:40 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp1 -->
+        <test-method is-config="true" signature="failResults(org.testng.ITestResult)[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:40 IST" name="failResults" finished-at="2020-05-26T10:31:40 IST" duration-ms="408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp1 status=SUCCESS method=LoginTest.loginApp1()[pri:2, instance:com.hospitality.testcases.LoginTest@6193932a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[report is generated ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- failResults -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:40 IST" name="tearDown" finished-at="2020-05-26T10:31:51 IST" duration-ms="10198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.hospitality.testcases.SearchFlightTest -->
+      </class> <!-- com.hospitality.testcases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

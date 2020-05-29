@@ -19,14 +19,15 @@ import org.openqa.selenium.support.ui.Select;
 
 public class CommonUtilities {
 	
+	//Utility for taking screenshot and it's path 
 	public static String Screenshot(WebDriver driver)
 	{
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String scpath= System.getProperty("user.dir")+"Screenshots/ClearTrip_"+getCurrentDateTime()+".png";
+		String scpath= System.getProperty("user.dir")+"/Screenshots/ClearTrip_"+getCurrentDateTime()+".png";
 		//FileHandler.copyFile(src, "./Screenshots/login.png"); no more supported 
 		try {
 			//FileUtils.copyFile(src, new File("./Screenshots/login.png"));
-			FileHandler.copy(src, new File("./Screenshots/ClearTrip_"+getCurrentDateTime()+".png"));
+			FileHandler.copy(src, new File(scpath));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			System.out.println("Unable to take Screeshot "+ e.getMessage());
@@ -58,8 +59,17 @@ public class CommonUtilities {
 	}
 	
 	//select a date from Calendar
-	public static void dateSelect(String date,WebDriver calendar,WebDriver driver)
-	{
-		
+	public static void dateSelect(String date,WebElement calendar,WebDriver driver)
+	{/// to work on this--to make it work for all calendar 
+		((JavascriptExecutor)driver).executeScript ("document.getElementById('DepartDate').removeAttribute('readonly',0);"); // Enables the from date box
+
+		try {
+			calendar.clear();
+			calendar.sendKeys(date); // D, d M, yy
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			System.out.println("calendar is not selected "+e.getMessage());
+		}
 	}
 }
