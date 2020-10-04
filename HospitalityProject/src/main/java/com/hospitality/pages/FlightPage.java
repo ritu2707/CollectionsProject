@@ -50,6 +50,7 @@ public class FlightPage extends TestBase {
 		ToInput.sendKeys(to);
 
 		CommonUtilities.dateSelect(datedepart, departdate, driver);
+		Thread.sleep(2000);
 		CommonUtilities.SelectDropdownvalue(Adultsdropdown, Adult);
 		Thread.sleep(2000);
 		CommonUtilities.SelectDropdownvalue(childdropdown, child);
@@ -59,5 +60,24 @@ public class FlightPage extends TestBase {
 		SearchButton.click();
 
 	}
+    // to search round trip flight
+	public void roundTripFlight(String from, String to, String datedepart, String datereturn, String Adult, String child, String infant)
+			throws InterruptedException {
+		RoundTrip.click();
+		frominput.sendKeys(from);
+		ToInput.sendKeys(to);
 
+		CommonUtilities.dateSelect(datedepart, departdate, driver);
+		Thread.sleep(2000);
+		CommonUtilities.dateSelect(datereturn, returndate, driver);
+		Thread.sleep(2000);
+		CommonUtilities.SelectDropdownvalue(Adultsdropdown, Adult);
+		Thread.sleep(2000);
+		CommonUtilities.SelectDropdownvalue(childdropdown, child);
+		Thread.sleep(2000);
+		CommonUtilities.SelectDropdownvalue(infantdropdown, infant);
+		Thread.sleep(2000);
+		SearchButton.click();
+
+	}
 }

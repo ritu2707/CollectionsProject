@@ -7,6 +7,7 @@ import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -60,12 +61,15 @@ public class CommonUtilities {
 	
 	//select a date from Calendar
 	public static void dateSelect(String date,WebElement calendar,WebDriver driver)
-	{/// to work on this--to make it work for all calendar 
-		((JavascriptExecutor)driver).executeScript ("document.getElementById('DepartDate').removeAttribute('readonly',0);"); // Enables the from date box
+	{// id is sent as 2nd argument
+		//((JavascriptExecutor)driver).executeScript ("document.getElementById('DepartDate').removeAttribute('readonly',0);");
+		((JavascriptExecutor)driver).executeScript ("arguments[0].removeAttribute('readonly','readonly')", calendar);
+		// Enables the from date box
 
 		try {
 			calendar.clear();
-			calendar.sendKeys(date); // D, d M, yy
+			calendar.sendKeys(date);// D, d M, yy
+			calendar.sendKeys(Keys.ENTER);
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Setting is going to be done]]>
@@ -22,19 +22,13 @@
     <line>
       <![CDATA[report is generated ]]>
     </line>
-    <line>
-      <![CDATA[Test is about to end]]>
-    </line>
-    <line>
-      <![CDATA[report is generated ]]>
-    </line>
   </reporter-output>
-  <suite started-at="2020-05-26T10:31:06 IST" name="Default suite" finished-at="2020-05-26T10:31:51 IST" duration-ms="44764">
+  <suite started-at="2020-06-10T16:55:07 IST" name="Default suite" finished-at="2020-06-10T16:55:45 IST" duration-ms="38691">
     <groups>
     </groups>
-    <test started-at="2020-05-26T10:31:06 IST" name="Default test" finished-at="2020-05-26T10:31:51 IST" duration-ms="44764">
+    <test started-at="2020-06-10T16:55:07 IST" name="Default test" finished-at="2020-06-10T16:55:45 IST" duration-ms="38691">
       <class name="com.hospitality.testcases.LoginTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:06 IST" name="setUpSuite" finished-at="2020-05-26T10:31:06 IST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.hospitality.testcases.LoginTest@5dd6264]" started-at="2020-06-10T16:55:07 IST" name="setUpSuite" finished-at="2020-06-10T16:55:07 IST" duration-ms="272" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting is going to be done]]>
@@ -44,7 +38,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:06 IST" name="setUp" finished-at="2020-05-26T10:31:32 IST" duration-ms="26536" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hospitality.testcases.LoginTest@5dd6264]" started-at="2020-06-10T16:55:07 IST" name="setUp" finished-at="2020-06-10T16:55:28 IST" duration-ms="21045" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser can be started]]>
@@ -54,18 +48,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginToClearTrip()[pri:1, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:32 IST" name="loginToClearTrip" finished-at="2020-05-26T10:31:36 IST" duration-ms="3472" status="PASS">
+        <test-method signature="loginToClearTrip()[pri:1, instance:com.hospitality.testcases.LoginTest@5dd6264]" started-at="2020-06-10T16:55:28 IST" name="loginToClearTrip" finished-at="2020-06-10T16:55:31 IST" duration-ms="3514" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[login is successful]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginToClearTrip -->
-        <test-method is-config="true" signature="failResults(org.testng.ITestResult)[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:36 IST" name="failResults" finished-at="2020-05-26T10:31:40 IST" duration-ms="4047" status="PASS">
+        <test-method is-config="true" signature="failResults(org.testng.ITestResult)[pri:0, instance:com.hospitality.testcases.LoginTest@5dd6264]" started-at="2020-06-10T16:55:31 IST" name="failResults" finished-at="2020-06-10T16:55:34 IST" duration-ms="2104" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginToClearTrip status=SUCCESS method=LoginTest.loginToClearTrip()[pri:1, instance:com.hospitality.testcases.LoginTest@6193932a] output=login is successful]]]>
+                <![CDATA[[TestResult name=loginToClearTrip status=SUCCESS method=LoginTest.loginToClearTrip()[pri:1, instance:com.hospitality.testcases.LoginTest@5dd6264] output=login is successful]]]>
               </value>
             </param>
           </params>
@@ -78,28 +72,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- failResults -->
-        <test-method signature="loginApp1()[pri:2, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:40 IST" name="loginApp1" finished-at="2020-05-26T10:31:40 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginApp1 -->
-        <test-method is-config="true" signature="failResults(org.testng.ITestResult)[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:40 IST" name="failResults" finished-at="2020-05-26T10:31:40 IST" duration-ms="408" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginApp1 status=SUCCESS method=LoginTest.loginApp1()[pri:2, instance:com.hospitality.testcases.LoginTest@6193932a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test is about to end]]>
-            </line>
-            <line>
-              <![CDATA[report is generated ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- failResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hospitality.testcases.LoginTest@6193932a]" started-at="2020-05-26T10:31:40 IST" name="tearDown" finished-at="2020-05-26T10:31:51 IST" duration-ms="10198" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hospitality.testcases.LoginTest@5dd6264]" started-at="2020-06-10T16:55:34 IST" name="tearDown" finished-at="2020-06-10T16:55:45 IST" duration-ms="11907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

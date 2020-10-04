@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hospitality.testcases.SearchFlightTest">
+      <class name="com.hospitality.testcases.LoginTest">
         <methods>
-          <include name="flightSearching"/>
+          <include name="loginToClearTrip"/>
           <include name="setUpSuite"/>
           <include name="failResults"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.hospitality.testcases.SearchFlightTest -->
+      </class> <!-- com.hospitality.testcases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

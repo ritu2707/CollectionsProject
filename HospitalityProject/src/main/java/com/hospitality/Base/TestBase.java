@@ -29,7 +29,7 @@ public class TestBase {
 	public static ExtentReports report;
 	public static ExtentTest logger;
 	
-	// Extent report logger is used to write the logs on Extent reports
+	// Extent report logger of class ExtentTest is used to write the logs on Extent reports
 	// to understand the failure of the statements, we can write logs -Reporter.log for custom logs
 	//we can use Apache4j log as well - bt that is via listener, so it will have standard/pre defined logs 
 	
@@ -41,7 +41,9 @@ public class TestBase {
 		extent= new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/extentReport_"+CommonUtilities.getCurrentDateTime()+".html"));
 		report=new ExtentReports();
 		report.attachReporter(extent);
+		
 		Reporter.log("Setting is done-test can be started",true);
+		//logger.info("extent report is set up");
 		
 	}
 	@BeforeClass
@@ -67,7 +69,8 @@ public class TestBase {
     	{
     		//logger.fail("test case is failed ",MediaEntityBuilder.createScreenCaptureFromPath(CommonUtilities.Screenshot(driver)).build());
     		//logger.addScreenCaptureFromPath(CommonUtilities.Screenshot(driver));
-    		//logger.log(LogStatus., logger.addScreenCaptureFromPath(CommonUtilities.Screenshot(driver)));
+    		String despath= CommonUtilities.Screenshot(driver);
+    		//logger.log(Status.FAIL, logger.addScreenCaptureFromPath(despath));
     		logger.log(Status.FAIL, "test case is failed ",MediaEntityBuilder.createScreenCaptureFromPath(CommonUtilities.Screenshot(driver)).build());
     		
     		}
